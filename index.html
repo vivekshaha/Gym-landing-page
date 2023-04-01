@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(./images/abs-g7a7197321_1920.jpg);
+        color: white;
+        font-family: "Acme", sans-serif;
+      }
+      .box {
+        margin: 0;
+        /* border: 4px solid rebeccapurple; */
+      }
+      #box1 h3 {
+        margin: 0;
+      }
+      #box1 {
+        position: absolute;
+        display: inline-block;
+        width: 15%;
+        text-align: center;
+      }
+      #box2 {
+        display: block;
+        width: 50%;
+        margin: auto;
+      }
+      #box3 {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        display: inline-block;
+        width: 20%;
+        /* border: 4px solid rebeccapurple; */
+      }
+      #box1 img {
+        width: 100px;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+        font-size: 22px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: aqua;
+        text-decoration: underline;
+      }
+      .btn {
+        padding: 5px 38px;
+        background-color: aqua;
+        font-size: 20px;
+        border-radius: 5px;
+        border: none;
+        margin-left: 4px;
+        cursor: pointer;
+      }
+      .container {
+        width: 33%;
+        margin: 97px 72px;
+      }
+      .container form input {
+        display: block;
+        height: 42px;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Acme", sans-serif;
+      }
+      .submit {
+        cursor: pointer;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="containder">
+      <div class="box" id="box1">
+        <img
+          src="./images/429d631659a11a9eb666b103d811470a-removebg-preview (1).png"
+          alt=""
+        />
+        <h3>Vivek Fitness</h3>
+      </div>
+      <div class="box" id="box2">
+        <ul class="navbar">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Traning center</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Follow</a></li>
+        </ul>
+      </div>
+      <div class="box" id="box3">
+        <button class="btn">Call</button><button class="btn">Email</button>
+      </div>
+    </header>
+    <div class="container">
+      <form action="php.php">
+        <input type="text" name="name" id="" placeholder="Enter your name" />
+        <input type="number" name="name" id="" placeholder="Enter your age" />
+        <input type="text" name="name" id="" placeholder="Enter your genter" />
+        <input type="text" name="name" id="" placeholder="Enter your email" />
+
+        <input
+          type="number"
+          name="name"
+          id=""
+          placeholder="Enter your contat Detail"
+        />
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
